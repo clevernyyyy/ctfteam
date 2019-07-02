@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.scss';
+
+/* Components */
+import NavBar from './components/NavBar';
+import SecondaryNav from './components/SecondaryNav';
+
+/* Pages */
+import Schedule from './pages/Schedule';
+import Results from './pages/Results';
+import Writeups from './pages/Writeups';
+import About from './pages/About';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='ctfteam'>
+      <NavBar />
+        <Router>
+          <SecondaryNav />
+          <div className='content'>
+            <Route exact path="/" component={Schedule} />
+            <Route path="/results" component={Results} />
+            <Route path="/writeups" component={Writeups} />
+            <Route path="/about" component={About} />
+          </div>
+        </Router>
     </div>
   );
 }

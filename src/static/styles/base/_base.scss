@@ -1,0 +1,17 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+
+.ctfteam {
+	background-color: #e3e3e3;
+	min-height: 100vh;
+}
+
+.content {
+	margin-top: 50px;
+}
