@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='ctfteam'>
       <NavBar />
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <SecondaryNav />
           <div className='content'>
             <Route exact path="/" component={Schedule} />
