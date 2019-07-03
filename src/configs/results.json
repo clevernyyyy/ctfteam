@@ -1,8 +1,26 @@
 [
 	{
-		"name": "test1"
+		"eventName": "Google CTF 2019",
+		"description": "Google runs a CTF competition in two rounds: an online qualification round and an onsite final round. The top 10 teams from the qualification round will be invited to the finals to compete onsite for a prize pool of more than USD $31,337.",
+		"solves": 1,
+		"place": "187th",
+		"dateStart": "2019-06-21T00:01:00.000Z",
+		"dateEnd": "2019-06-23T23:59:00.000Z",
+		"ctfFormat": "Jeopardy",
+		"url": "https://capturetheflag.withgoogle.com/",
+		"participants": [1,2,3,4,5],
+		"solveHeros": [{"5": 1}]
 	},
 	{
-		"name": "test2"
+		"eventName": "ISITDTU CTF 2019",
+		"description": "",
+		"solves": 4,
+		"place": "133rd / 327",
+		"dateStart": "2019-06-29T12:00:00.000Z",
+		"dateEnd": "2019-06-30T12:00:00.000Z",
+		"ctfFormat": "Jeopardy",
+		"url": "https://ctf.isitdtu.com/",
+		"participants": [1,6],
+		"solveHeros": [{"1": 3},{"6": 1}]
 	}
 ]

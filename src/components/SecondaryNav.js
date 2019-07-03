@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import '../App.scss';
 
 /* Bootstrap */
@@ -14,27 +13,19 @@ class SecondaryNav extends Component {
 	      <Container>
 	      	<Nav defaultActiveKey="/" as="ul">
 					  <Nav.Item as="li">
-					    <Link to="/">
-					    	<Nav.Link href="/">Upcoming Schedule</Nav.Link>
-					    </Link>
+					    <Nav.Link href="/">Upcoming Schedule</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item as="li">
-					    <Link to="/results">
-					    	<Nav.Link eventKey="link-1"
-					    		href="results">Past Results</Nav.Link>
-					    </Link>
+					    <Nav.Link eventKey="results"
+					    	href="results">Past Results</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item as="li">
-					    <Link to="/writeups">
-					    	<Nav.Link href="writeups"
-					    		eventKey="link-2">Writeups</Nav.Link>
-					    </Link>
+				    	<Nav.Link href="writeups"
+				    		eventKey="writeups">Writeups</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item as="li">
-					    <Link to="/about">
-					    	<Nav.Link href="about"
-					    		eventKey="link-2">About Contrast</Nav.Link>
-					    </Link>
+				    	<Nav.Link href="about"
+				    		eventKey="about">About Contrast</Nav.Link>
 					  </Nav.Item>
 					</Nav>
 	      </Container>

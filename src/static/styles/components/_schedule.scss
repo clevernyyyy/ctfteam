@@ -1,0 +1,33 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+
+.note {
+	margin-top: -30px;
+	margin-bottom: 30px;
+}
+
+.cal-container {
+	background-color: $white;
+	padding: 15px;
+	border: 1px solid $alto;
+}
+
+.fc-view-container {
+	background-color: $white;
+}
+
+.fc-content {
+	color: white;
+	background-color: $contrast-color;
+	padding: 0px 0px 0px 7px;
+}
+
+.fc-event {
+	border: 1px solid $contrast-color;
+}
+
+.fc-event, .fc-event-dot {
+	background-color: $contrast-color;
+}
+
+

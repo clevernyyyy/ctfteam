@@ -1,48 +1,63 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../App.scss';
-import "react-big-calendar/lib/css/react-big-calendar.css";
 
 /* Bootstrap */
 import Container from 'react-bootstrap/Container';
 
-import { Calendar, Views, momentLocalizer } from 'react-big-calendar'
-import moment from 'moment';
-import events from '../configs/events.js';
-// import dates from '../configs/dates';
+import FullCalendar from '@fullcalendar/react';
+import interactionPlugin from '@fullcalendar/interaction';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid'
 
-let allViews = Object.keys(Views).map(k => Views[k])
+import events from '../configs/events';
 
-const ColoredDateCellWrapper = ({ children }) =>
-  React.cloneElement(React.Children.only(children), {
-    style: {
-      backgroundColor: 'lightblue',
-    },
-  })
+class Schedule extends Component {
+	static displayName = 'Upcoming Schedule';
 
+	constructor(props) {
+		super(props);
+		this.state = {
+			calendarEvents: events
+		};
+	};
 
-function Schedule() {
+	handleDateClick = (arg) => {
+		// potentially allow users to add events down the line...
+		console.log(arg)
+		// if (window.confirm('Would you like to add an event to ' + arg.dateStr + ' ?')) {
+		// 	this.setState({
+		// 		calendarEvents: this.state.calendarEvents.concat({
+		// 			title: 'New Event',
+		// 			start: arg.date,
+		// 			allDay: arg.allDay
+		// 		})
+		// 	})
+		// }
+	};
 
-	// const { localizer } = this.props;
+	handleEventClick = (arg) => {
+		// TODO - Open modal with event details
+		console.log(arg);
+	};
 
-	// Setup the localizer by providing the moment (or globalize) Object
-	// to the correct localizer.
-	const localizer = momentLocalizer(moment);
-  
-  return (
-    <Container>
-    	<Calendar
-		    events={events}
-		    views={allViews}
-		    step={60}
-		    showMultiDayTimes
-		    defaultDate={new Date(2015, 3, 1)}
-		    components={{
-		      timeSlotWrapper: ColoredDateCellWrapper,
-		    }}
-		    localizer={localizer}
-	    />
-    </Container>
-  );
+	render() {
+	  return (
+	    <Container>
+	    	<div className="note">Credentials will <b><em>always</em></b> be found in Slack - not here.</div>
+	      <div className="cal-container">
+		      <FullCalendar 
+		      	defaultView="dayGridMonth"
+		      	dateClick={this.handleDateClick}
+		      	eventClick={this.handleEventClick}
+		      	plugins={[ interactionPlugin, timeGridPlugin, dayGridPlugin ]} 
+		      	ref={this.calendarComponentRef}
+		      	events={this.state.calendarEvents}
+	  				editable
+		      />
+	      </div>
+	    </Container>
+	  );
+	}
 }
 
 export default Schedule;

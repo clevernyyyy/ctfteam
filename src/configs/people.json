@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"name": "Adam Schaal",
+		"handle": "clevernyyyy",
+		"title": "Principal Application Security Researcher",
+		"bio": "Adam is this guy and that's just like your opinion man.",
+		"image": "adam.png"
+	},
+	{
+		"id": 2,
+		"name": "Morgan Creekmore",
+		"handle": "???",
+		"title": "Software Engineer, .NET Agent",
+		"bio": "Morgan is...",
+		"image": "morgan.png"
+	},
+	{
+		"id": 3,
+		"name": "David Lindner",
+		"handle": "golfhackerdave",
+		"title": "Director, Application Security",
+		"bio": "David is...",
+		"image": "david.png"
+	},
+	{
+		"id": 4,
+		"name": "Mark Lopez",
+		"handle": "???",
+		"title": "Engineer, .Net Team",
+		"bio": "Mark is...",
+		"image": "mark.png"
+	},
+	{
+		"id": 5,
+		"name": "Matt Austin",
+		"handle": "???",
+		"title": "Director, Application Security Research",
+		"bio": "Matt is...",
+		"image": "matt.png"
+	},
+	{
+		"id": 6,
+		"name": "Peter Lazorchak",
+		"handle": "???",
+		"title": "???",
+		"bio": "Peter is...",
+		"image": "peter.png"
+	}
+]

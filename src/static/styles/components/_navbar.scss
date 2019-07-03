@@ -1,7 +1,7 @@
 @import '../base/variables';
 
 .navbar {
-	background-color: #ffffff;
+	background-color: $white;
 
 	.navbar-right {
 		display: flex;
@@ -12,7 +12,7 @@
 			font-size: 16px;
 			margin-top: 10px;
 			font-weight: 400;
-			color: #000;
+			color: $black;
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
 		}
@@ -20,7 +20,7 @@
 }
 
 .secondary-nav {
-	background-color: #333;
+	background-color: $gray-darkest;
 	height: 50px;
 	display: flex;
 	flex-direction: row;
@@ -33,7 +33,7 @@
 	}
 
 	a.nav-link {
-		color: #e3e3e3;
+		color: $concrete;
 		font-weight: 100;
 		font-size: calc(1vw + 1vh);
 		align-items: center;
