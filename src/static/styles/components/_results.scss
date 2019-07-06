@@ -34,18 +34,6 @@
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
 	.bottom-panel {
 		display: flex;
 		flex-direction: row;
@@ -54,13 +42,27 @@
 		padding: 5px 15px;
 		align-items: center;
 		color: $silver;
-
 		height: 50px;
 
-		.participant-photos {
-			height: 35px;
-			padding: 0px 3px;
-			border-radius: 50%
+		.photo-links {
+			&:hover {
+				cursor: pointer;
+				
+				.participant-photos {
+					height: 40px;
+				    transition: all 150ms linear; /* vendorless fallback */
+				    -o-transition: all 150ms linear; /* opera */
+				    -ms-transition: all 150ms linear; /* IE 10 */
+				    -moz-transition: all 150ms linear; /* Firefox */
+				    -webkit-transition: all 150ms linear; /*safari and chrome */
+				}
+			}
+
+			.participant-photos {
+				height: 35px;
+				padding: 0px 3px;
+				border-radius: 50%
+			}
 		}
 	}
 }

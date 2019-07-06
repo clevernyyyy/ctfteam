@@ -32,10 +32,13 @@ class ResultBox extends Component {
 			.map((ele, idx) => {
 				const imgUrl = this.getImage(ele);
 				return (
-					<img key={idx}
-						className="participant-photos"
-						src={imgUrl}
-						alt={ele.name} />
+					<a key={idx}
+						className="photo-links"
+						href={`bio?id=${ele.id}`}>
+						<img className="participant-photos"
+							src={imgUrl}
+							alt={ele.name} />
+					</a>
 				)
 			}	
 		);

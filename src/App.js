@@ -11,6 +11,7 @@ import Schedule from './pages/Schedule';
 import Results from './pages/Results';
 import Writeups from './pages/Writeups';
 import About from './pages/About';
+import Bio from './pages/Bio';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/results" component={Results} />
             <Route path="/writeups" component={Writeups} />
             <Route path="/about" component={About} />
+            <Route path="/bio" component={Bio} />
           </div>
         </Router>
     </div>

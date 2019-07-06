@@ -1,0 +1,225 @@
+.bio-page {
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+
+	.bio-box {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 0;
+		/*margin-right: 50px;*/
+
+		.bio-group {
+			display: flex;
+			flex-direction: row;
+
+			.bio-pic {
+				border: 5px solid $contrast-color;
+				border-radius: 50%;
+				z-index: 2;
+			}
+
+			.bio-text {
+				display: flex;
+				flex-direction: column;
+				background-color: $contrast-color;
+				justify-content: center;
+				color: $white;
+
+				.bio-name {
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+			}
+		}
+
+		.bio-description {
+			padding: 20px 20px 20px 0px;
+			max-width: 100vw;
+
+			.bio-heading {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.bio-solves {
+		display: flex;
+		flex-direction: column;
+
+		.solve-heading {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.solve-group {
+			display: flex;
+			flex-direction: row;
+
+			.solve-box {
+				display: flex;
+				flex-direction: column;
+				height: 60px;
+				width: 60px;
+				background-color: $white;
+				margin: 10px 20px 10px 0px;
+				justify-content: center;
+    			align-items: center;
+    			border: 1px solid $silver;
+
+    			.solve-category {
+    				text-transform: uppercase;
+    				font-size: 12px;
+    			}
+
+    			.solve-points {
+    				font-size: 20px;
+    				font-weight: bold;
+    			}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 200px){
+	.bio-group {
+		min-width: 300px;
+
+		.bio-pic {
+			height: 60px;
+			width: 60px;
+		}
+	}
+	.bio-text {
+		height: 60px;
+		margin-left: -30px;
+		padding: 0px 20px 0px 50px;
+		line-height: 16px;
+
+		.bio-name {
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		.bio-title {
+			font-size: 10px;
+			color: $wild-sand;
+		}
+
+		.bio-handle {
+			font-size: 10px;
+		}
+	}
+	.bio-arrow {
+		border-bottom: 30px solid transparent; 
+		border-top: 30px solid transparent;
+		border-left: 30px solid $contrast-color;
+	}
+}
+
+@media screen and (min-width: 400px){
+	.bio-group {
+		min-width: 480px;
+	
+		.bio-pic {
+			height: 60px;
+			width: 60px;
+		}
+	}
+	.bio-text {
+		height: 60px;
+		margin-left: -30px;
+		padding: 0px 20px 0px 50px;
+		line-height: 16px;
+
+		.bio-name {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		.bio-title {
+			font-size: 12px;
+			color: $wild-sand;
+		}
+
+		.bio-handle {
+			font-size: 12px;
+		}
+	}
+	.bio-arrow {
+		border-bottom: 30px solid transparent; 
+		border-top: 30px solid transparent;
+		border-left: 30px solid $contrast-color;
+	}
+}
+
+
+@media screen and (min-width: 768px){
+	.bio-group {
+		.bio-pic {
+			height: 120px;
+			width: 120px;
+		}
+	}
+	.bio-text {
+		height: 120px;
+		margin-left: -60px;
+		padding: 0px 40px 0px 100px;
+		line-height: 20px;
+
+		.bio-name {
+			font-size: 36px;
+			line-height: 40px;
+		}
+
+		.bio-title {
+			font-size: 18px;
+			color: $wild-sand;
+		}
+
+		.bio-handle {
+			font-size: 18px;
+		}
+	}
+	.bio-arrow {
+		border-bottom: 60px solid transparent; 
+		border-top: 60px solid transparent;
+		border-left: 60px solid $contrast-color;
+	}
+}
+
+/*
+@media screen and (min-width: 1000px){
+	.bio-pic {
+		height: 120px;
+		width: 120px;
+	}
+	.bio-text {
+		height: 120px;
+		margin-left: -60px;
+		padding: 0px 40px 0px 100px;
+		line-height: 20px;
+
+		.bio-name {
+			font-size: 36px;
+			line-height: 40px;
+		}
+
+		.bio-title {
+			font-size: 18px;
+			color: $wild-sand;
+		}
+
+		.bio-handle {
+			font-size: 18px;
+		}
+	}
+	.bio-arrow {
+		border-bottom: 60px solid transparent; 
+		border-top: 60px solid transparent;
+		border-left: 60px solid $contrast-color;
+	}
+}
+*/
