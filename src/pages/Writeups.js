@@ -28,7 +28,8 @@ class Writeups extends Component {
 		const solves = results.reverse().map((ele, idx) => {
 			const solveBoxes = this.createSolveBoxes(ele.solveHeros, ele.eventId);
 			return (
-				<div className='solve-group'>
+				<div className='solve-group'
+					key={idx}>
 		    	<div className='solve-ctf-heading'>{ele.eventName}</div>
 		    	<div className='solve-boxes'>
 		    		{solveBoxes}

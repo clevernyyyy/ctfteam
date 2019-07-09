@@ -4,6 +4,9 @@ import '../App.scss';
 /* Bootstrap */
 import Container from 'react-bootstrap/Container';
 
+/* Components */
+import CodeBlock from '../components/CodeBlock';
+
 class Writeup extends Component {
 	static displayName = 'Writeup';
 
@@ -37,6 +40,7 @@ class Writeup extends Component {
 	    <Container className='writeup-container'>
 	    	<ReactMarkdown 
 	    		source={this.state.markdown} 
+	    		renderers= {{ code: CodeBlock }}
 	    		escapeHtml={false}
 	    	/>
 	    </Container>

@@ -77,6 +77,18 @@
 		}
 	}
 
+	h2 {
+		margin-bottom: 1rem;
+    	color: #52c0b0;
+	}
+
+	pre {
+		background-color: $wild-sand !important;
+		padding: 10px !important;	
+	    overflow: hidden !important;
+	    overflow-x: scroll !important;
+	}
+
 	code {
 		background-color: #fff1f3;
     	padding: 2px;
