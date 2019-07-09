@@ -19,7 +19,7 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start  && find ./src/writeups/ -name '*.png' -exec cp -prv '{}' 'build/static/media/' ';'",
+    "start": "react-scripts start",
     "build": "rm -rf docs && react-scripts build && mv build docs && cp CNAME docs && cp 404.html docs && find ./src/writeups/ -name '*.png' -exec cp -prv '{}' 'docs/static/media/' ';'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

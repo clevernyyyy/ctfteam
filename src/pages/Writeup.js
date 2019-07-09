@@ -19,20 +19,6 @@ class Writeup extends Component {
     const challengeTitle = this.props.location.pathname ? this.props.location.pathname.split('/')[3] : 0;
 		const reactPath = require(`../writeups/${eventId}/${challengeTitle}.md`);
 
-		// require.context('../writeups/', true, /\.png$/);
-
-		// let testImageArray = [];
-		// const imagePathArray = ['../writeups/2/bingo.png', '../writeups/2/facebookflag.png'];
-
-		// imagePathArray.forEach((ele, idx) => {
-		// 	let x = require(ele);
-		// 	testImageArray[idx] = x;
-		// });
-
-		// console.log(testImageArray);
-
-		// const imgUrl = require(`../writeups/2/bingo.png`);
-
 		fetch(reactPath)
 			.then(response => {
 				return response.text();
@@ -48,7 +34,7 @@ class Writeup extends Component {
 		const ReactMarkdown = require('react-markdown/with-html');
 
 		return (
-	    <Container>
+	    <Container className='writeup-container'>
 	    	<ReactMarkdown 
 	    		source={this.state.markdown} 
 	    		escapeHtml={false}
