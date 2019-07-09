@@ -17,14 +17,14 @@ class SecondaryNav extends Component {
 					  </Nav.Item>
 					  <Nav.Item as="li">
 					    <Nav.Link eventKey="results"
-					    	href="results">Past Results</Nav.Link>
+					    	href="/results">Past Results</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item as="li">
-				    	<Nav.Link href="writeups"
+				    	<Nav.Link href="/writeups"
 				    		eventKey="writeups">Writeups</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item as="li">
-				    	<Nav.Link href="about"
+				    	<Nav.Link href="/about"
 				    		eventKey="about">About Contrast</Nav.Link>
 					  </Nav.Item>
 					</Nav>

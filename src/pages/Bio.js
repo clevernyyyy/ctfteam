@@ -3,6 +3,8 @@ import '../App.scss';
 
 /* Bootstrap */
 import Container from 'react-bootstrap/Container';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 import people from '../configs/people';
 import results from '../configs/results';
@@ -27,7 +29,8 @@ class Bio extends Component {
     	// filter out ctfs without hero solve
     	let solveHeros = ele.solveHeros.filter((el) => {
     		el['eventName'] = ele.eventName;
-    		return el.hero === id;
+    		el['eventId'] = ele.eventId;
+    		return el.hero.includes(id);
     	});
 
     	if (solveHeros.length > 0) {
@@ -53,11 +56,22 @@ class Bio extends Component {
 
     const solveBlock = heroSolves.map((ele, idx) => {
     	return (
-    		<div className='solve-box'
-    			key={idx}>
-    			<span className='solve-category'>{ele.challengeCategory}</span>
-    			<span className='solve-points'>{ele.points}</span>
-    		</div>
+    		<a className='solve-writeup'
+    			href={`/writeup/${ele.eventId}/${ele.challengeTitle}`}
+	    		key={idx}>
+	    		<OverlayTrigger placement='top'
+	    			overlay={
+	    				<Tooltip id={`tooltip-top`}>
+	    					{ele.eventName}
+	    				</Tooltip>
+	    			}
+	    		>
+		    		<div className='solve-box'>
+		    			<span className='solve-category'>{ele.challengeCategory}</span>
+		    			<span className='solve-points'>{ele.points}</span>
+		    		</div>
+	    		</OverlayTrigger>
+    		</a>
     	);
     });
 

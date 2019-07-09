@@ -10,6 +10,7 @@ import SecondaryNav from './components/SecondaryNav';
 import Schedule from './pages/Schedule';
 import Results from './pages/Results';
 import Writeups from './pages/Writeups';
+import Writeup from './pages/Writeup';
 import About from './pages/About';
 import Bio from './pages/Bio';
 
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/" component={Schedule} />
             <Route path="/results" component={Results} />
             <Route path="/writeups" component={Writeups} />
+            <Route path="/writeup" component={Writeup} />
             <Route path="/about" component={About} />
             <Route path="/bio" component={Bio} />
           </div>

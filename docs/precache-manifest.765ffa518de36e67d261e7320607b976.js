@@ -1,31 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf09ad638d68ec5124f2259a5921bcd7",
+    "revision": "df7ea8bc77d0c64532a2bf6cc7346aa0",
     "url": "/index.html"
   },
   {
-    "revision": "e16f25a8187747c36357",
-    "url": "/static/css/2.bdd1ac46.chunk.css"
+    "revision": "3a53ae381e447cb2bd2c",
+    "url": "/static/css/2.ba926fef.chunk.css"
   },
   {
-    "revision": "d70fd64dc8d92df3758d",
-    "url": "/static/css/main.41c3578a.chunk.css"
+    "revision": "7ac649bc77106c5e4a15",
+    "url": "/static/css/main.7d0e6397.chunk.css"
   },
   {
-    "revision": "e16f25a8187747c36357",
-    "url": "/static/js/2.6ace0747.chunk.js"
+    "revision": "3a53ae381e447cb2bd2c",
+    "url": "/static/js/2.bc606e3a.chunk.js"
   },
   {
-    "revision": "d70fd64dc8d92df3758d",
-    "url": "/static/js/main.aab4d5fc.chunk.js"
+    "revision": "7ac649bc77106c5e4a15",
+    "url": "/static/js/main.57fe6a60.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
+    "revision": "063319543382cc9893cc3a7b9b580e16",
+    "url": "/static/media/Do you like math.06331954.md"
+  },
+  {
+    "revision": "39ff42e7fa52746753d7f8b86520b2f0",
+    "url": "/static/media/F4c3b00k.39ff42e7.md"
+  },
+  {
+    "revision": "ace5325921470faf3c01e1ad71d31198",
+    "url": "/static/media/Rosé Garden.ace53259.md"
+  },
+  {
     "revision": "4befbbc94390767eb8320921bea15257",
     "url": "/static/media/adam.4befbbc9.png"
+  },
+  {
+    "revision": "d6cbf9570d5c0b419783fdf661c25daa",
+    "url": "/static/media/bnv.d6cbf957.md"
   },
   {
     "revision": "5adf619309f7635b81c07ac42250e52c",
@@ -38,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bb7b8e2d9c685633107bcf2150337357",
     "url": "/static/media/icon.bb7b8e2d.png"
+  },
+  {
+    "revision": "d5b14d410e3971bb0367e406981dfc52",
+    "url": "/static/media/index.d5b14d41.md"
   },
   {
     "revision": "b497f814f6d894fe97d91051e498906e",

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import '../App.scss';
 
+/* Bootstrap */
+import Container from 'react-bootstrap/Container';
+
 class About extends Component {
 	render() {
 		return (
-	    <div className="test">
+	    <Container>
 	    	About
-	    </div>
+	    </Container>
 		);
 	}
 }

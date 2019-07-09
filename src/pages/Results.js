@@ -30,7 +30,6 @@ class Results extends Component {
 			);
 		})
 
-
 		return (
       <Container>
       	{allResults}        
