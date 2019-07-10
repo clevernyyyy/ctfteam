@@ -34,3 +34,5 @@ function App() {
 }
 
 export default App;
+
+// TODO - We could probably use a footer with some Contrast specific information.

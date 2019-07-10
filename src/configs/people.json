@@ -40,11 +40,11 @@
 		"image": "matt.png"
 	},
 	{
-		"id": 6,
-		"name": "Peter Lazorchak",
-		"handle": "???",
-		"title": "???",
-		"bio": "Peter is...",
-		"image": "peter.png"
+	    "id": 6,
+	    "name": "Peter Lazorchak",
+	    "handle": "p_laz",
+	    "title": "Software Engineer, Python Agent",
+	    "bio": "Peter is a developer primarily interested in systems and language theory. When he isn't coding he's rock climbing or swimming. Makes an occasional appearance on the Rift.",
+	    "image": "peter.png"
 	}
 ]
