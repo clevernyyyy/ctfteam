@@ -31,3 +31,24 @@
 }
 
 
+.modal-bod {
+
+	.modal-date {
+		display: flex;
+		flex-direction: row;
+	}
+	.modal-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.modal-sub-header {
+		font-weight: bold;
+		color: $contrast-color;
+	}
+	.modal-link {
+		/*color: $mine-shaft;*/
+	}
+}

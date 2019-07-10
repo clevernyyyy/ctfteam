@@ -3,6 +3,8 @@ import '../App.scss';
 
 /* Bootstrap */
 import Container from 'react-bootstrap/Container';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 import FullCalendar from '@fullcalendar/react';
 import interactionPlugin from '@fullcalendar/interaction';
@@ -17,9 +19,28 @@ class Schedule extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			calendarEvents: events
+			calendarEvents: events,
+			showModal: false,
+			eventTitle: '',
+			startDate: '',
+			endDate: '',
+			link: '',
+			comments: ''
 		};
 	};
+
+	handleClose = () => {
+		this.setState({
+			showModal: false
+		});
+	}
+
+	handleOpen = () => {
+		console.log('gets to open');
+		this.setState({
+			showModal: true
+		});
+	}
 
 	handleDateClick = (arg) => {
 		// potentially allow users to add events down the line...
@@ -37,7 +58,23 @@ class Schedule extends Component {
 
 	handleEventClick = (arg) => {
 		// TODO - Open modal with event details
-		console.log(arg);
+		const title = arg.el.getElementsByClassName('fc-title')[0].innerHTML;
+
+		const event = events.filter((ele) => {
+			return ele.title === title;
+		})[0];
+
+		const startDate = new Date(event.start).toLocaleString();
+		const endDate = new Date(event.end).toLocaleString();
+
+		this.setState({
+			showModal: true,
+			eventTitle: event.title,
+			startDate: startDate,
+			endDate: endDate,
+			link: event.link,
+			comments: event.comments
+		});
 	};
 
 	render() {
@@ -55,6 +92,42 @@ class Schedule extends Component {
 	  				editable
 		      />
 	      </div>
+
+
+				<Modal show={this.state.showModal} onHide={this.handleClose}>
+				  <Modal.Header closeButton>
+				    <Modal.Title>{this.state.eventTitle}</Modal.Title>
+				  </Modal.Header>
+				  <Modal.Body>
+				  	<div className='modal-bod'>
+				  		<div className='modal-date'>
+					  		<div className='modal-row'>
+					  			<span className='modal-sub-header'>Start Date</span>
+					  			<span>{this.state.startDate}</span>
+					  		</div>
+					  		<div className='modal-row'>
+					  			<span className='modal-sub-header'>End Date</span>
+					  			<span>{this.state.endDate}</span>
+					  		</div>
+				  		</div>
+
+				  		{this.state.link && <div className='modal-row'>
+				  			<span className='modal-sub-header'>URL</span>
+				  			<span><a className='modal-link' href={this.state.link}>{this.state.link}</a></span>
+				  		</div>}
+
+				  		{this.state.comments && <div className='modal-row'>
+				  			<span className='modal-sub-header'>Comments</span>
+				  			<span>{this.state.comments}</span>
+				  		</div>}
+				  	</div>
+				  </Modal.Body>
+				  <Modal.Footer>
+				    <Button variant="secondary" onClick={this.handleClose}>
+				      Close
+				    </Button>
+				  </Modal.Footer>
+				</Modal>
 	    </Container>
 	  );
 	}

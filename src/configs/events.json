@@ -1,14 +1,37 @@
 [
   {
     "title": "WCTF 2019",
-    "url": "",
+    "link": "",
     "start": "2019-07-05T02:00:00.000Z",
-    "end": "2019-07-06T10:00:00.000Z"
+    "end": "2019-07-06T10:00:00.000Z",
+    "comments": ""
+  },
+  {
+    "title": "InnoCTF",
+    "link": "http://innoctf.com/",
+    "start": "2019-07-13T08:00:00.000Z",
+    "end": "2019-07-14T08:00:00.000Z",
+    "comments": "Not positive we'll get in. I've entered information, but don't seem to be getting access yet."
+  },
+  {
+    "title": "peactf",
+    "link": "https://peactf.com/",
+    "start": "2019-07-14T04:00:00.000Z",
+    "end": "2019-07-21T04:00:00.000Z",
+    "comments": ""
+  },
+  {
+    "title": "CyBRICS CTF Quals 2019",
+    "link": "https://cybrics.net/",
+    "start": "2019-07-20T10:00:00.000Z",
+    "end": "2019-07-21T10:00:00.000Z",
+    "comments": ""
   },
   {
     "title": "Hackcon",
-    "url": "",
+    "link": "",
     "start": "2019-08-22T15:30:00.000Z",
-    "end": "2019-08-23T15:30:00.000Z"
+    "end": "2019-08-23T15:30:00.000Z",
+    "comments": ""
   }
 ]
