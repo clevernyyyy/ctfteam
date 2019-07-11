@@ -16,10 +16,12 @@ After connecting to the provided server via the command line, a randomized arith
 #### Solution
 
 This problem boiled down to a loop of the following:
+
 1. opening up a connection to the server via a socket
 1. parsing the provided problem
 1. calculating the solution
 1. sending the result back to the server
+
 For the first step, we use python's built-in `socket` library.
 
 ```py
