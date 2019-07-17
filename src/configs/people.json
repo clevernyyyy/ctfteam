@@ -1,5 +1,13 @@
 [
 	{
+		"id": 0,
+		"name": "Anonymous",
+		"handle": "ccontrast_anon",
+		"title": "Various Anonymous Activites",
+		"bio": "",
+		"image": "pawn.png"
+	},
+	{
 		"id": 1,
 		"name": "Adam Schaal",
 		"handle": "clevernyyyy",
@@ -8,12 +16,12 @@
 		"image": "adam.png"
 	},
 	{
-		"id": 2,
-		"name": "Morgan Creekmore",
-		"handle": "???",
-		"title": "Software Engineer, .NET Agent",
-		"bio": "Morgan is...",
-		"image": "morgan.png"
+        "id": 2,
+        "name": "Morgan Creekmore",
+        "handle": "gamingrobot",
+        "title": "Software Engineer, .NET Agent",
+        "bio": "Doing Stuff",
+        "image": "morgan.png"
 	},
 	{
 		"id": 3,

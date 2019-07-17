@@ -16,8 +16,8 @@
   {
     "title": "peactf",
     "link": "https://peactf.com/",
-    "start": "2019-07-14T04:00:00.000Z",
-    "end": "2019-07-21T04:00:00.000Z",
+    "start": "2019-07-21T04:00:00.000Z",
+    "end": "2019-07-28T04:00:00.000Z",
     "comments": ""
   },
   {
@@ -33,5 +33,12 @@
     "start": "2019-08-22T15:30:00.000Z",
     "end": "2019-08-23T15:30:00.000Z",
     "comments": ""
+  },
+  {
+    "title": "CSAW 2019",
+    "link": "https://csaw.engineering.nyu.edu/ctf",
+    "start": "2019-09-13T20:00:00.000Z",
+    "end": "2019-09-15T20:00:00.000Z",
+    "comments": "CSAW is a really good one. At university we qualified for finals twice, it was a lot of fun."
   }
 ]

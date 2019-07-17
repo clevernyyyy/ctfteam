@@ -13,7 +13,7 @@ class Results extends Component {
 	static displayName = 'Results';
 
 	render() {
-		const allResults = results.map((ele, idx) => {
+		const allResults = results.reverse().map((ele, idx) => {
 			return (
 				<ResultBox key={idx}
 					eventName={ele.eventName}

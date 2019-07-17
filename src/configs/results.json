@@ -2,7 +2,7 @@
 	{
 		"eventId": 1,
 		"eventName": "Google CTF 2019",
-		"description": "Google runs a CTF competition in two rounds: an online qualification round and an onsite final round. The top 10 teams from the qualification round will be invited to the finals to compete onsite for a prize pool of more than USD $31,337.",
+		"description": "Our first team competition, this was an extremely difficult CTF. We only solved one challenge, but were extremely close on several others. Overall, our participants had a ton of fun!",
 		"solves": 1,
 		"place": "187th",
 		"dateStart": "2019-06-21T00:01:00.000Z",
@@ -15,15 +15,14 @@
 				"hero": [5],
 				"points": 155,
 				"challengeTitle": "bnv",
-				"challengeCategory": "Web",
-				"writeupLink": ""
+				"challengeCategory": "Web"
 			}
 		]
 	},
 	{
 		"eventId": 2,
 		"eventName": "ISITDTU CTF 2019",
-		"description": "",
+		"description": "This CTF was held overseas and the timing was difficult to get a ton of participation. Still, we were able to solve three challenges and will participate again.",
 		"solves": 3,
 		"place": "133rd / 327",
 		"dateStart": "2019-06-29T12:00:00.000Z",
@@ -36,22 +35,69 @@
 				"hero": [1],
 				"points": 100,
 				"challengeTitle": "F4c3b00k",
-				"challengeCategory": "Misc",
-				"writeupLink": ""
+				"challengeCategory": "Misc"
 			},
 			{
 				"hero": [1],
 				"points": 100,
 				"challengeTitle": "Rosé Garden",
-				"challengeCategory": "Web",
-				"writeupLink": ""
+				"challengeCategory": "Web"
 			},
 			{
 				"hero": [6],
 				"points": 100,
 				"challengeTitle": "Do you like math",
-				"challengeCategory": "Programming",
-				"writeupLink": ""
+				"challengeCategory": "Programming"
+			}
+		]
+	},
+	{
+		"eventId": 3,
+		"eventName": "InnoCTF 2019",
+		"description": "InnoCTF was a beginner-based CTF, but we entered if only to gain experience. It turned out to be a lot of fun as we frantically raced to solve as many challenges as we could. We came one short of solving all the challenges and achieved our first top 15 finish.",
+		"solves": 20,
+		"place": "13th",
+		"dateStart": "2019-07-13T08:00:00.000Z",
+		"dateEnd": "2019-07-14T08:00:00.000Z",
+		"ctfFormat": "Jeopardy",
+		"url": "http://innoctf.com/",
+		"participants": [1,2,6],
+		"solveHeros": [
+			{
+				"hero": [1, 2],
+				"points": 100,
+				"challengeTitle": "Robots",
+				"challengeCategory": "Web"
+			},
+			{
+				"hero": [1],
+				"points": 200,
+				"challengeTitle": "Cool Style",
+				"challengeCategory": "Web"
+			},
+			{
+				"hero": [1, 6],
+				"points": 500,
+				"challengeTitle": "Lines",
+				"challengeCategory": "Crypto"
+			},
+			{
+				"hero": [1],
+				"points": 700,
+				"challengeTitle": "It Matches",
+				"challengeCategory": "Misc"
+			},
+			{
+				"hero": [1, 2],
+				"points": 300,
+				"challengeTitle": "Back In Time",
+				"challengeCategory": "Web"
+			},
+			{
+				"hero": [1],
+				"points": 800,
+				"challengeTitle": "Birds",
+				"challengeCategory": "Crypto"
 			}
 		]
 	}

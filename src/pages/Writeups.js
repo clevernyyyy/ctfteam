@@ -9,8 +9,18 @@ import results from '../configs/results';
 class Writeups extends Component {
 	static displayName = 'Writeups';
 
+	compare(a ,b) {
+		if (a > b) return +1;
+    if (a < b) return -1;
+    return 0;
+	}
+
 	createSolveBoxes(solves, eventId) {
-		return solves.map((ele, idx) => {
+		const solvesSorted = solves.sort((a,b) => {
+			return this.compare(a.challengeCategory, b.challengeCategory) || this.compare(a.points, b.points) ;
+		});
+
+		return solvesSorted.map((ele, idx) => {
 			return (
 			  <a className='solve-writeup'
     			href={`/writeup/${eventId}/${ele.challengeTitle}`}
