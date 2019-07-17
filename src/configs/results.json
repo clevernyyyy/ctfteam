@@ -98,6 +98,18 @@
 				"points": 800,
 				"challengeTitle": "Birds",
 				"challengeCategory": "Crypto"
+			},
+			{
+				"hero": [1],
+				"points": 223,
+				"challengeTitle": "Prism",
+				"challengeCategory": "Stego"
+			},
+			{
+				"hero": [1],
+				"points": 500,
+				"challengeTitle": "Between Violent and Cocytus",
+				"challengeCategory": "Crypto"
 			}
 		]
 	}

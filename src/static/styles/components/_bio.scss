@@ -56,6 +56,8 @@
 		.solve-group {
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
+
 
 			.solve-writeup {
 				color: $black;
@@ -63,7 +65,7 @@
 				.solve-box {
 					display: flex;
 					flex-direction: column;
-					height: 60px;
+					height: 80px;
 					min-width: 60px;
 					background-color: $white;
 					margin: 10px 20px 10px 0px;
@@ -72,6 +74,18 @@
 	    			border: 1px solid $silver;
 
 	    			.solve-category {
+	    				color: $contrast-color;
+	    			}
+
+	    			.solve-title {
+	    				max-width: 130px;
+	    				text-align: center;
+						height: 30px;
+						display: flex;
+						align-items: center;
+	    			}
+
+	    			.solve-title, .solve-category {
 	    				text-transform: uppercase;
 	    				font-size: 12px;
 						margin: 0px 5px;

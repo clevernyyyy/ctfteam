@@ -26,6 +26,7 @@ class Writeups extends Component {
     			href={`/writeup/${eventId}/${ele.challengeTitle}`}
 	    		key={idx}>
 	    		<div className='solve-box'>
+	    			<span className='solve-title'>{ele.challengeTitle}</span>
 	    			<span className='solve-category'>{ele.challengeCategory}</span>
 	    			<span className='solve-points'>{ele.points}</span>
 	    		</div>

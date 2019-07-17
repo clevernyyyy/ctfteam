@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c93c1041341c5d31dc61500a0bc58ed",
+    "revision": "0752d71d1c393470f16da6f04f207f1d",
     "url": "/index.html"
   },
   {
-    "revision": "95ab4eb5583e3ac88793",
+    "revision": "ad385c8c058232711913",
     "url": "/static/css/2.ba926fef.chunk.css"
   },
   {
-    "revision": "a0235bfe91dea92c64d1",
-    "url": "/static/css/main.30a47dc8.chunk.css"
+    "revision": "d1f09e6c4c9a64bd0433",
+    "url": "/static/css/main.cfd82cde.chunk.css"
   },
   {
-    "revision": "95ab4eb5583e3ac88793",
-    "url": "/static/js/2.bc0d8654.chunk.js"
+    "revision": "ad385c8c058232711913",
+    "url": "/static/js/2.a1d5aeb6.chunk.js"
   },
   {
-    "revision": "a0235bfe91dea92c64d1",
-    "url": "/static/js/main.32d28bb1.chunk.js"
+    "revision": "d1f09e6c4c9a64bd0433",
+    "url": "/static/js/main.ce19c6c2.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99fd699dae5dbf780f1ce4f87497fdf9",
     "url": "/static/media/Back In Time.99fd699d.md"
+  },
+  {
+    "revision": "995064a6502dc96c40148f48bad714f5",
+    "url": "/static/media/Between Violent and Cocytus.995064a6.md"
   },
   {
     "revision": "c99935d23b8f87dae77cfef75844543a",
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6982bc296e768e4268afced88efe5354",
     "url": "/static/media/Lines.6982bc29.md"
+  },
+  {
+    "revision": "450d2fe730d8b219307b70dee9ee7ae4",
+    "url": "/static/media/Prism.450d2fe7.md"
   },
   {
     "revision": "08c39011a6aa40d766ac143dc8bd0526",

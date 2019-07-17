@@ -11,7 +11,7 @@
     "link": "http://innoctf.com/",
     "start": "2019-07-13T08:00:00.000Z",
     "end": "2019-07-14T08:00:00.000Z",
-    "comments": "Not positive we'll get in. I've entered information, but don't seem to be getting access yet."
+    "comments": "13th overall.  Solved 20/21 challenges."
   },
   {
     "title": "peactf",
@@ -26,6 +26,13 @@
     "start": "2019-07-20T10:00:00.000Z",
     "end": "2019-07-21T10:00:00.000Z",
     "comments": ""
+  },
+  {
+    "title": "Real World CTF 2019",
+    "link": "https://realworldctf.com/",
+    "start": "2019-07-28T02:00:00.000Z",
+    "end": "2019-07-30T02:00:00.000Z",
+    "comments": "All challenges are built on top of real world applications."
   },
   {
     "title": "Hackcon",
