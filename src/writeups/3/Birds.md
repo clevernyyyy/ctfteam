@@ -4,7 +4,10 @@
 
 The challenge statement showed a picture of birds on 5 wires and referenced [RFC-1149](https://tools.ietf.org/html/rfc1149). 
 
-![birds_on_a_wire](cryptobirds.png)
+<figure class='image-centered'>
+	<img src='/static/media/cryptobirds.png' alt='Birds On a Wire' />
+  <figcaption>Birds On A Wire</figcaption>
+</figure>
 
 #### Description
 
