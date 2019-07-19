@@ -2,6 +2,8 @@
 
 #### Challenge Statement
 
+I need your clothes your boots and your motorcycle.
+
 http://188.130.155.66:4444/rAbCilIPOIvDCrjeHIIRDPuPMzARtYUp/
 
 #### Description
@@ -25,7 +27,6 @@ Browsing back to http://188.130.155.66:4444/rAbCilIPOIvDCrjeHIIRDPuPMzARtYUp/sup
 username: `admin`
 <br />
 password: `' OR 1=1 -- `
-
 
 
 Once I submit that, I am presented with the flag.

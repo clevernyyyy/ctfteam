@@ -65,13 +65,13 @@
 		"solveHeros": [
 			{
 				"hero": [1, 2],
-				"points": 100,
+				"points": 179,
 				"challengeTitle": "Robots",
 				"challengeCategory": "Web"
 			},
 			{
 				"hero": [1],
-				"points": 200,
+				"points": 156,
 				"challengeTitle": "Cool Style",
 				"challengeCategory": "Web"
 			},
@@ -83,19 +83,19 @@
 			},
 			{
 				"hero": [1],
-				"points": 700,
+				"points": 135,
 				"challengeTitle": "It Matches",
 				"challengeCategory": "Misc"
 			},
 			{
 				"hero": [1, 2],
-				"points": 300,
+				"points": 250,
 				"challengeTitle": "Back In Time",
 				"challengeCategory": "Web"
 			},
 			{
 				"hero": [1],
-				"points": 800,
+				"points": 415,
 				"challengeTitle": "Birds",
 				"challengeCategory": "Crypto"
 			},
@@ -110,6 +110,48 @@
 				"points": 500,
 				"challengeTitle": "Between Violent and Cocytus",
 				"challengeCategory": "Crypto"
+			},
+			{
+				"hero": [2],
+				"points": 161,
+				"challengeTitle": "RF",
+				"challengeCategory": "Crypto"
+			},
+			{
+				"hero": [1],
+				"points": 484,
+				"challengeTitle": "One hundred times RSA",
+				"challengeCategory": "Crypto"
+			},
+			{
+				"hero": [1],
+				"points": 484,
+				"challengeTitle": "Librarian Skill",
+				"challengeCategory": "Crypto"
+			},
+			{
+				"hero": [1],
+				"points": 197,
+				"challengeTitle": "Hex64",
+				"challengeCategory": "Misc"
+			},
+			{
+				"hero": [2],
+				"points": 157,
+				"challengeTitle": "Call Me",
+				"challengeCategory": "Reversing"
+			},
+			{
+				"hero": [2],
+				"points": 220,
+				"challengeTitle": "Quick Peek",
+				"challengeCategory": "Reversing"
+			},
+			{
+				"hero": [2],
+				"points": 130,
+				"challengeTitle": "BGs",
+				"challengeCategory": "Web"
 			}
 		]
 	}

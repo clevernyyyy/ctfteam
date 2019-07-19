@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { PieChart } from 'react-chartkick'
+import 'chart.js'
 import '../App.scss';
 
 /* Bootstrap */
@@ -27,12 +29,30 @@ class Writeups extends Component {
 	    		key={idx}>
 	    		<div className='solve-box'>
 	    			<span className='solve-title'>{ele.challengeTitle}</span>
-	    			<span className='solve-category'>{ele.challengeCategory}</span>
 	    			<span className='solve-points'>{ele.points}</span>
+	    			<span className='solve-category'>{ele.challengeCategory}</span>
 	    		</div>
     		</a>
 	    );
 		});
+	}
+
+	getPieData() {
+		const solves = results.map((ele) => {
+			return ele.solveHeros;
+		}).flat();
+
+		const groupByCateogry = solves.reduce((objectsByKeyValue, obj) => {
+	    const value = obj['challengeCategory'];
+	    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj);
+	    return objectsByKeyValue;
+	  }, {});
+
+		const categoryCount = Object.keys(groupByCateogry).map((ele) => {
+			return [ele, groupByCateogry[ele].length];	
+		})
+
+		return categoryCount;
 	}
 	
 	render() {
@@ -49,8 +69,11 @@ class Writeups extends Component {
 			);
 		});
 
+		const data = this.getPieData();
+
 		return (
 	    <Container>
+	    	<div className='column-page'>
 	    		<div className='solves'>
 	    			<div className='solve-heading'>
 	    				Team Writeups
@@ -60,7 +83,30 @@ class Writeups extends Component {
 	    			</div>
 		    		{solves}
 		    	</div>
-	    	
+		    	<div className='graph'>
+		    		<PieChart data={data}
+		    			colors={[
+		    				'#6195ED',			// cornflower-blue
+		    				'#ED8261',			// burnt-sienna
+		    				'#C361ED',			// heliotrope
+		    				'#52c0b0',			// fountain-blue
+		    				'#ED3574',			// violet-red
+		    				'#89ED35',			// inch-worm
+		    				'#EDD335',			// golden-dream
+		    				'#FF5733',
+		    				'#33FFA2',
+		    				'#5833FF',
+		    				'#33D4FF',
+		    				'#9933FF',
+		    				'#FFE333',
+		    				'#FF3380'
+		    			]}
+		    			width='350px'
+		    			height='200px'
+		    			donut
+		    			legend='right'/>
+	    		</div>
+	    	</div>
 	    </Container>
 		);
 	}

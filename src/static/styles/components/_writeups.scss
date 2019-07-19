@@ -1,71 +1,82 @@
-.solves {
+.column-page {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 
-	.solve-heading {
-		font-size: 28px;
-		font-weight: bold;
-		color: $black;
-		margin-bottom: 30px;
-
-		.solve-sub-heading {
-			font-size: 14px;
-			color: $dove-gray;
-			font-weight: normal;
-			font-style: italic;
-		}
-	}
-
-	.solve-ctf-heading {
-		font-size: 18px;
-		font-weight: bold;
-	}
-
-	.solve-group {
+	.solves {
 		display: flex;
 		flex-direction: column;
-		padding: 0px 0px 20px 0px;
+		padding-right: 30px;
 
-		.solve-boxes {
-			display: flex;
+		.solve-heading {
+			font-size: 28px;
+			font-weight: bold;
+			color: $black;
+			margin-bottom: 30px;
+
+			.solve-sub-heading {
+				font-size: 14px;
+				color: $dove-gray;
+				font-weight: normal;
+				font-style: italic;
+			}
 		}
 
-		.solve-writeup {
-			color: $black;
+		.solve-ctf-heading {
+			font-size: 18px;
+			font-weight: bold;
+		}
 
-			.solve-box {
+		.solve-group {
+			display: flex;
+			flex-direction: column;
+			padding: 0px 0px 20px 0px;
+
+			.solve-boxes {
 				display: flex;
-				flex-direction: column;
-				height: 80px;
-				min-width: 60px;
-				background-color: $white;
-				margin: 10px 20px 10px 0px;
-				justify-content: center;
-    			align-items: center;
-    			border: 1px solid $silver;
+				flex-wrap: wrap;
+			}
 
-    			.solve-category {
-    				color: $contrast-color;
-    			}
+			.solve-writeup {
+				color: $black;
 
-    			.solve-title {
-    				max-width: 130px;
-    				text-align: center;
-					height: 30px;
+				.solve-box {
 					display: flex;
-					align-items: center;
-    			}
+					flex-direction: column;
+					height: 90px;
+					min-width: 60px;
+					background-color: $white;
+					margin: 10px 20px 10px 0px;
+					justify-content: center;
+	    			align-items: center;
+	    			border: 1px solid $silver;
 
-    			.solve-title, .solve-category {
-    				text-transform: uppercase;
-    				font-size: 12px;
-					margin: 0px 5px;
-    			}
+	    			&:hover {
+	    				-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+						-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+						box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+	    			}
 
-    			.solve-points {
-    				font-size: 20px;
-    				font-weight: bold;
-    			}
+	    			.solve-category {
+	    				color: $contrast-color;
+	    			}
+
+	    			.solve-title, .solve-category {
+	    				text-transform: uppercase;
+	    				font-size: 12px;
+						margin: 0px 5px;
+						height: 30px;
+	    				max-width: 130px;
+	    				text-align: center;
+						display: flex;
+						align-items: center;
+	    			}
+
+	    			.solve-points {
+	    				font-size: 20px;
+	    				font-weight: bold;
+	    			}
+				}
 			}
 		}
 	}

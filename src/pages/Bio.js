@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { PieChart } from 'react-chartkick'
+import 'chart.js'
 import '../App.scss';
 
 /* Bootstrap */
@@ -11,6 +13,12 @@ import results from '../configs/results';
 
 class Bio extends Component {
 	static displayName = 'Bios';
+
+	compare(a ,b) {
+		if (a > b) return +1;
+    if (a < b) return -1;
+    return 0;
+	}
 
 	getImage(ele) {
 		// grab image if exists
@@ -41,7 +49,25 @@ class Bio extends Component {
     	result = [].concat.apply([], result);
     });
 
-    return result;
+		const solvesSorted = result.sort((a,b) => {
+			return this.compare(a.challengeCategory, b.challengeCategory) || this.compare(a.points, b.points) ;
+		});
+
+    return solvesSorted;
+	}
+
+	getPieData(heroSolves) {
+		const groupByCateogry = heroSolves.reduce((objectsByKeyValue, obj) => {
+	    const value = obj['challengeCategory'];
+	    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj);
+	    return objectsByKeyValue;
+	  }, {});
+
+		const categoryCount = Object.keys(groupByCateogry).map((ele) => {
+			return [ele, groupByCateogry[ele].length];	
+		})
+
+		return categoryCount;
 	}
 
 	render() {
@@ -76,6 +102,8 @@ class Bio extends Component {
     	);
     });
 
+		const data = this.getPieData(heroSolves);
+
 		return (
 	    <Container>
 	    	<div className='bio-page'>
@@ -102,9 +130,37 @@ class Bio extends Component {
 			    		{person.bio}
 			    	</div>
 		    	</div>
-		    	{!!heroSolves.length && <div className='bio-solves'>
-		    		<div className='solve-heading'>Solves</div>
-		    		<div className='solve-group'>{solveBlock}</div>
+		    	{!!heroSolves.length && <div className='bio-right'>
+			    	<div className='bio-solves'>
+			    		<div className='solve-heading'>Solves</div>
+			    		<div className='solve-group'>{solveBlock}</div>
+			    	</div>
+			    	<div className='bio-pie'>
+			    		<div className='solve-heading'>Solve Distribution</div>
+				    	<div className='graph'>
+				    		<PieChart data={data}
+				    			colors={[
+				    				'#6195ED',			// cornflower-blue
+				    				'#ED8261',			// burnt-sienna
+				    				'#C361ED',			// heliotrope
+				    				'#52c0b0',			// fountain-blue
+				    				'#ED3574',			// violet-red
+				    				'#89ED35',			// inch-worm
+				    				'#EDD335',			// golden-dream
+				    				'#FF5733',
+				    				'#33FFA2',
+				    				'#5833FF',
+				    				'#33D4FF',
+				    				'#9933FF',
+				    				'#FFE333',
+				    				'#FF3380'
+				    			]}
+				    			width='350px'
+				    			height='200px'
+				    			donut
+				    			legend='right'/>
+			    		</div>
+			    	</div>
 		    	</div>}
 	    	</div>
 	    </Container>

@@ -6,8 +6,6 @@
 	.bio-box {
 		display: flex;
 		flex-direction: column;
-		flex: 1 0 0;
-		/*margin-right: 50px;*/
 
 		.bio-group {
 			display: flex;
@@ -44,57 +42,63 @@
 		}
 	}
 
-	.bio-solves {
+	.solve-heading {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.graph {
+		padding-top: 20px;
+	}
+
+	.bio-right {
 		display: flex;
-		flex-direction: column;
+    	flex-direction: column;
 
-		.solve-heading {
-			font-size: 18px;
-			font-weight: bold;
-		}
-
-		.solve-group {
+		.bio-solves {
 			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
+			flex-direction: column;
 
+			.solve-group {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				padding: 0px 0px 20px 0px;
 
-			.solve-writeup {
-				color: $black;
+				.solve-writeup {
+					color: $black;
 
-				.solve-box {
-					display: flex;
-					flex-direction: column;
-					height: 80px;
-					min-width: 60px;
-					background-color: $white;
-					margin: 10px 20px 10px 0px;
-					justify-content: center;
-	    			align-items: center;
-	    			border: 1px solid $silver;
-
-	    			.solve-category {
-	    				color: $contrast-color;
-	    			}
-
-	    			.solve-title {
-	    				max-width: 130px;
-	    				text-align: center;
-						height: 30px;
+					.solve-box {
 						display: flex;
-						align-items: center;
-	    			}
+						flex-direction: column;
+						height: 90px;
+						min-width: 60px;
+						background-color: $white;
+						margin: 10px 20px 10px 0px;
+						justify-content: center;
+		    			align-items: center;
+		    			border: 1px solid $silver;
 
-	    			.solve-title, .solve-category {
-	    				text-transform: uppercase;
-	    				font-size: 12px;
-						margin: 0px 5px;
-	    			}
+		    			.solve-category {
+		    				color: $contrast-color;
+		    			}
 
-	    			.solve-points {
-	    				font-size: 20px;
-	    				font-weight: bold;
-	    			}
+		    			.solve-title, .solve-category {
+		    				text-transform: uppercase;
+		    				font-size: 12px;
+							margin: 0px 5px;
+		    				max-width: 130px;
+		    				text-align: center;
+							height: 30px;
+							display: flex;
+							align-items: center;
+		    			}
+
+		    			.solve-points {
+		    				font-size: 20px;
+		    				font-weight: bold;
+		    			}
+					}
 				}
 			}
 		}

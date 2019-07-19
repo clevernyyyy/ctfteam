@@ -2,7 +2,9 @@
 
 #### Challenge Statement
 
-The challenge statement showed a picture of birds on 5 wires and referenced [RFC-1149](https://tools.ietf.org/html/rfc1149). I didn't manage to get a screenshot of the actual challenge before they took the scoreboard down.
+The challenge statement showed a picture of birds on 5 wires and referenced [RFC-1149](https://tools.ietf.org/html/rfc1149). 
+
+![birds_on_a_wire](cryptobirds.png)
 
 #### Description
 
