@@ -8,17 +8,28 @@
 		flex-direction: column;
 		padding-right: 30px;
 
-		.solve-heading {
-			font-size: 28px;
-			font-weight: bold;
-			color: $black;
-			margin-bottom: 30px;
+		.solve-heading-group {
+			display: flex;
+    		justify-content: space-between;
 
-			.solve-sub-heading {
-				font-size: 14px;
-				color: $dove-gray;
-				font-weight: normal;
-				font-style: italic;
+    		.open-mix {
+    			text-transform: uppercase;
+			    font-size: 12px;
+			    margin: 20px;
+    		}
+
+			.solve-heading {
+				font-size: 28px;
+				font-weight: bold;
+				color: $black;
+				margin-bottom: 30px;
+
+				.solve-sub-heading {
+					font-size: 14px;
+					color: $dove-gray;
+					font-weight: normal;
+					font-style: italic;
+				}
 			}
 		}
 
@@ -155,6 +166,28 @@
 		code {
 			background-color: #fff1f3;
 	    	padding: 2px;
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width: 200px){
+	.graph {
+		canvas {
+		    height: 240px;
+		    width: 340px;
+		}
+	}
+}
+
+@media screen and (min-width: 600px){
+	.graph {
+		canvas {
+		    height: 100%;
+		    width: auto;
+		    margin: 0 auto;
 		}
 	}
 }

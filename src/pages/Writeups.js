@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+
 import { PieChart } from 'react-chartkick'
 import 'chart.js'
 import '../App.scss';
@@ -10,6 +13,26 @@ import results from '../configs/results';
 
 class Writeups extends Component {
 	static displayName = 'Writeups';
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			showModal: false
+		};
+	};
+
+	handleClose = () => {
+		this.setState({
+			showModal: false
+		});
+	}
+
+	handleOpen = () => {
+		console.log('gets to open');
+		this.setState({
+			showModal: true
+		});
+	}
 
 	compare(a ,b) {
 		if (a > b) return +1;
@@ -75,37 +98,53 @@ class Writeups extends Component {
 	    <Container>
 	    	<div className='column-page'>
 	    		<div className='solves'>
-	    			<div className='solve-heading'>
-	    				Team Writeups
-	    				<div className='solve-sub-heading'>
-	    					(Most recent competitions displayed first)
-	    				</div>
-	    			</div>
-		    		{solves}
+	    			<div className='solve-heading-group'>
+		    			<div className='solve-heading'>
+		    				Team Writeups
+		    				<div className='solve-sub-heading'>
+		    					(Most recent competitions displayed first)
+		    				</div>
+		    			</div>
+					    <Button className='open-mix' variant="secondary" onClick={this.handleOpen}>
+					      View Category Split
+					    </Button>
+				    </div>
+						<Modal show={this.state.showModal} onHide={this.handleClose}>
+						  <Modal.Header closeButton>
+						    <Modal.Title>Solved Category Split</Modal.Title>
+						  </Modal.Header>
+						  <Modal.Body>
+				    		<div className='graph'>
+					    		<PieChart data={data}
+					    			className='piegraph'
+					    			colors={[
+					    				'#6195ED',			// cornflower-blue
+					    				'#ED8261',			// burnt-sienna
+					    				'#C361ED',			// heliotrope
+					    				'#52c0b0',			// fountain-blue
+					    				'#ED3574',			// violet-red
+					    				'#89ED35',			// inch-worm
+					    				'#EDD335',			// golden-dream
+					    				'#FF5733',
+					    				'#33FFA2',
+					    				'#5833FF',
+					    				'#33D4FF',
+					    				'#9933FF',
+					    				'#FFE333',
+					    				'#FF3380'
+					    			]}
+					    			donut
+					    			legend='right'/>
+				    		</div>
+		    			</Modal.Body>
+						  <Modal.Footer>
+						    <Button variant="secondary" onClick={this.handleClose}>
+						      Close
+						    </Button>
+						  </Modal.Footer>
+						</Modal>
+		    		<div>{solves}</div>
 		    	</div>
-		    	<div className='graph'>
-		    		<PieChart data={data}
-		    			colors={[
-		    				'#6195ED',			// cornflower-blue
-		    				'#ED8261',			// burnt-sienna
-		    				'#C361ED',			// heliotrope
-		    				'#52c0b0',			// fountain-blue
-		    				'#ED3574',			// violet-red
-		    				'#89ED35',			// inch-worm
-		    				'#EDD335',			// golden-dream
-		    				'#FF5733',
-		    				'#33FFA2',
-		    				'#5833FF',
-		    				'#33D4FF',
-		    				'#9933FF',
-		    				'#FFE333',
-		    				'#FF3380'
-		    			]}
-		    			width='350px'
-		    			height='200px'
-		    			donut
-		    			legend='right'/>
-	    		</div>
 	    	</div>
 	    </Container>
 		);

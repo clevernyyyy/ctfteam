@@ -54,5 +54,29 @@
 	    "title": "Software Engineer, Python Agent",
 	    "bio": "Peter is a developer primarily interested in systems and language theory. When he isn't coding he's rock climbing or swimming. Makes an occasional appearance on the Rift.",
 	    "image": "peter.png"
+	}, 
+	{
+		"id": 7,
+		"name": "Chris Wood",
+		"handle": "crw5996",
+		"title": "Software Engineer",
+		"bio": "Chris is a software engineer primarily interested in networks and databases",
+		"image": "chris.png"
+	}, 
+	{
+		"id": 8,
+		"name": "Adam Stone",
+		"handle": "young_robot",
+		"title": "Full Stack Engineer",
+		"bio": "A software engineer at Contrast Security who is also interested in IoT-based automation.",
+		"image": "adam_stone.png"
+	}, 
+	{
+		"id": 9,
+		"name": "Sara Garvey",
+		"handle": "",
+		"title": "Application Security Researcher",
+		"bio": "",
+		"image": "sara.png"
 	}
 ]
