@@ -54,5 +54,19 @@
     "start": "2019-09-13T20:00:00.000Z",
     "end": "2019-09-15T20:00:00.000Z",
     "comments": "CSAW is a really good one. At university we qualified for finals twice, it was a lot of fun."
+  },
+  {
+    "title": "Syskron Security CTF",
+    "link": "https://ctf2019.syskron-security.com/",
+    "start": "2019-10-08T23:00:00.000Z",
+    "end": "2019-10-13T23:00:00.000Z",
+    "comments": ""
+  },
+  {
+    "title": "Square CTF",
+    "link": "https://2019.squarectf.com/",
+    "start": "2019-10-10T20:00:00.000Z",
+    "end": "2019-10-16T20:00:00.000Z",
+    "comments": ""
   }
 ]
