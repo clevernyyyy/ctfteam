@@ -236,5 +236,77 @@
 				"challengeCategory": "Forensics"
 			}
 		]
+	},
+	{
+		"eventId": 6,
+		"eventName": "Plaid CTF",
+		"description": "Plaid CTF is run by one of the world's best hacking groups, PPP from Carnegie Mellon. They always have high quality and difficult challenges in their CTFs.  However, most of our team is still getting their feet wet when it comes to CTFing, so we had much more attendance focused on the WPI CTF which said it was more 'beginner friendly'.  Our sole solve on Plaid CTF by Mitch Ly, was unfortunately solved after the timeframe.  However, since it was a great effort by Mitch, we still wanted to recognize it with the writeup.",
+		"solves": 1,
+		"place": "266th / 1095",
+		"dateStart": "2020-04-17T21:00:00.000Z",
+    	"dateEnd": "2019-04-19T21:00:00.000Z",
+		"ctfFormat": "Jeopardy",
+		"url": "https://ctf.wpictf.xyz",
+		"participants": [1,7,10],
+		"solveHeros": [
+			{
+				"hero": [2],
+				"points": 250,
+				"challengeTitle": "dyrpto",
+				"challengeCategory": "Crypto"
+			}
+		]
+	},
+	{
+		"eventId": 7,
+		"eventName": "WPICTF",
+		"description": "As a beginner friendly CTF, this was a fun time as a ",
+		"solves": 18,
+		"place": "34th / 904",
+		"dateStart": "2020-04-17T21:00:00.000Z",
+    	"dateEnd": "2019-04-19T21:00:00.000Z",
+		"ctfFormat": "Jeopardy",
+		"url": "https://ctf.wpictf.xyz",
+		"participants": [1,2,3,4,6,7,8,9],
+		"solveHeros": [
+			{
+				"hero": [2],
+				"points": 700,
+				"challengeTitle": "RSA",
+				"challengeCategory": "Crypto"
+			}
+		]
+	},
+	{
+		"eventId": 8,
+		"eventName": "CyBRICS CTF 2020",
+		"description": "",
+		"solves": 14,
+		"place": "41st / 786",
+		"dateStart": "2020-07-25T10:00:00.000Z",
+    	"dateEnd": "2019-07-26T10:00:00.000Z",
+		"ctfFormat": "Jeopardy",
+		"url": "https://cybrics.net/tasks",
+		"participants": [1,2,3,5,6,9,10],
+		"solveHeros": [
+			{
+				"hero": [1],
+				"points": 52,
+				"challengeTitle": "Gif2png",
+				"challengeCategory": "Web"
+			}, 
+			{
+				"hero": [1,5],
+				"points": 209,
+				"challengeTitle": "WpC",
+				"challengeCategory": "Web"
+			}, 
+			{
+				"hero": [10],
+				"points": 237,
+				"challengeTitle": "Too Secure",
+				"challengeCategory": "Cyber"
+			}
+		]
 	}
 ]

@@ -2,7 +2,7 @@
 	{
 		"id": 0,
 		"name": "Anonymous",
-		"handle": "ccontrast_anon",
+		"handle": "contrast_anon",
 		"title": "Various Anonymous Activites",
 		"bio": "",
 		"image": "pawn.png"
@@ -12,16 +12,16 @@
 		"name": "Adam Schaal",
 		"handle": "clevernyyyy",
 		"title": "Principal Application Security Researcher",
-		"bio": "Adam is this guy and that's just like your opinion man.",
+		"bio": "Adam is just this guy, you know, and that's just like your opinion man.",
 		"image": "adam.png"
 	},
 	{
-        "id": 2,
-        "name": "Morgan Creekmore",
-        "handle": "gamingrobot",
-        "title": "Software Engineer, .NET Agent",
-        "bio": "Doing Stuff",
-        "image": "morgan.png"
+		"id": 2,
+		"name": "Morgan Creekmore",
+		"handle": "gamingrobot",
+		"title": "Software Engineer, .NET Agent",
+		"bio": "Doing Stuff",
+		"image": "morgan.png"
 	},
 	{
 		"id": 3,
@@ -36,7 +36,7 @@
 		"name": "Mark Lopez",
 		"handle": "???",
 		"title": "Engineer, .Net Team",
-		"bio": "Mark is...",
+		"bio": "",
 		"image": "mark.png"
 	},
 	{
@@ -78,5 +78,29 @@
 		"title": "Application Security Researcher",
 		"bio": "",
 		"image": "sara.png"
+	}, 
+	{
+		"id": 10,
+		"name": "Mitch Ly",
+		"handle": "ubermitchy",
+		"title": "Software Engineer, Misc.",
+		"bio": "Mitch habitually abandons sleep while in search of solutions.",
+		"image": "mitch.png"
+	},
+	{
+		"id": 11,
+		"name": "Virginia Hickox",
+		"handle": "GInxh",
+		"title": "Performance R&D",
+		"bio": "ginxh.io",
+		"image": "ginxhbioimage.png"
+	}, 
+	{
+		"id": 12,
+		"name": "Mitch Ly",
+		"handle": "",
+		"title": "",
+		"bio": "",
+		"image": "mitch.png"
 	}
 ]
