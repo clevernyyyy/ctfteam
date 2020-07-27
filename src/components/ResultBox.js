@@ -23,7 +23,7 @@ class ResultBox extends Component {
 	getImage(ele) {
 		const imgName = ele.image ? ele.image : 'icon.png';
 		const imgUrl = require(`../static/images/${imgName}`);
-		return imgUrl;
+		return imgUrl.default;
 	}
 
 	render() {

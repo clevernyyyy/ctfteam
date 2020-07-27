@@ -24,7 +24,7 @@ class Bio extends Component {
 		// grab image if exists
 		const imgName = ele.image ? ele.image : 'icon.png';
 		const imgUrl = require(`../static/images/${imgName}`);
-		return imgUrl;
+		return imgUrl.default;
 	}
 
 	getHeroSolves(id, results) {
@@ -77,7 +77,7 @@ class Bio extends Component {
       return ele.id === id;
     })[0];
 
-    const imgUrl = this.getImage(person);
+		const imgUrl = this.getImage(person);
     const heroSolves = this.getHeroSolves(id, results);
 
     const solveBlock = heroSolves.map((ele, idx) => {
