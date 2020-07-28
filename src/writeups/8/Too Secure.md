@@ -10,17 +10,17 @@ Enter decimal r2 value as the flag. Flag format here is NOT cybrics{...}
 <br/>Let H(x) be the function that generates &#226; given x
 <br/>Let x<sub>1</sub>, x<sub>2</sub> be the integer representations of M<sub>1</sub> and M<sub>2</sub>, respectively.
 <br/>We're given
-<br/>c = G * h <sup>r</sup>
-<br/>Where G = g<sup>x</sup> mod p and h = g ^ H(x) mod p
+<br/>c = G h^r
+<br/>Where G = g^x mod p and h = g^H(x) mod p
 <br/>We can combine and simplify: 
-<br/>c = g<sup>x + H(x)*r</sup> mod p
+<br/>c = g^(x + H(x)r) mod p
 <br/>
 <br/>To break the system, we want to find r<sub>2</sub> such that
 <br/>c<sub>1</sub> = c<sub>2</sub> mod p
-<br/>g<sup>x<sub>1</sub> + H(x<sub>1</sub>)*r<sub>1</sub></sup> = g<sup>x<sub>2</sub> + H(x<sub>2</sub>)*r<sub>2</sub></sup>mod p
+<br/>g^(x<sub>1</sub> + H(x<sub>1</sub>)r<sub>1</sub>) = g^(x<sub>2</sub> + H(x<sub>2</sub>)r<sub>2</sub>) mod p
 <br/>Since g is known, and we're given that the O<sub>p</sub>(g) = q, we could solve the above by solving:
-<br/>x<sub>1</sub> + H(x<sub>1</sub>)*r<sub>1</sub> = x<sub>2</sub> + H(x<sub>2</sub>)*r<sub>2</sub> mod q
-<br/>r2 = (x<sub>1</sub> - x<sub>2</sub> + H(x<sub>1</sub>)*r<sub>1</sub>) * H(x<sub>2</sub>)<sup>-1</sup> mod q
+<br/>x<sub>1</sub> + H(x<sub>1</sub>)r<sub>1</sub> = x<sub>2</sub> + H(x<sub>2</sub>)r<sub>2</sub> mod q
+<br/>r2 = (x<sub>1</sub> - x<sub>2</sub> + H(x<sub>1</sub>)r<sub>1</sub>) H(x<sub>2</sub>)<sup>-1</sup> mod q
 <br/>Where H(x<sub>2</sub>)<sup>-1</sup> is the multiplicative inverse of H(x<sub>2</sub>) modulo q
   
 ### Finding q
@@ -138,7 +138,7 @@ inv = modulo_multiplicative_inverse(hat_x2, q)
 </code></pre>
   
 ### Putting it all together
-<br/>r2 = (x<sub>1</sub> - x<sub>2</sub> + H(x<sub>1</sub>)*r<sub>1</sub>) * H(x<sub>2</sub>)<sup>-1</sup> mod q
+<br/>r2 = (x<sub>1</sub> - x<sub>2</sub> + H(x<sub>1</sub>) r<sub>1</sub>) H(x<sub>2</sub>)<sup>-1</sup> mod q
 <pre><code>
 print ( ((x1 - x2 + hat_x1 * r1) * inv ) % q )
 
