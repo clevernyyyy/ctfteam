@@ -10,7 +10,7 @@
     "@fullcalendar/react": "^4.2.0",
     "@fullcalendar/timegrid": "^4.2.0",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "node-sass": "^4.14.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
